@@ -1,0 +1,21 @@
+.payment-method
+    form.payment-method-container
+        h2.payment-method__card-header Выберите способ вывода
+        .payment-method__card-select
+            input(name="card" type="radio" value="visa" id="visa-card").payment-method__card-input
+            label(for="visa-card").payment-method__card-label.payment-method__card-label--first
+                .payment-method__card-item
+                    .payment-method__card-item-radio
+                    .payment-method__card-body
+                        img(src="img/payment-method/visa-main.svg" alt="card_visa").payment-method__card-img
+                        .payment-method__card-name Банковская карта
+                        smaller.payment-method__card-description Карта Visa, MasterCard (Беларусь)
+            input(name="card" type="radio" value="rrb" id="rrb-card").payment-method__card-input
+            label(for="rrb-card").payment-method__card-label
+                .payment-method__card-item
+                    .payment-method__card-item-radio
+                    .payment-method__card-body
+                        img(src="img/payment-method/rrb-main.svg" alt="card_rrb").payment-method__card-img
+                        .payment-method__card-name Кобренд–карта РРБ Банка
+                        smaller.payment-method__card-description Карта Visa (Беларусь)
+        h2.payment-method__output-header Вывод средств

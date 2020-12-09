@@ -1,0 +1,74 @@
+.payment-method {
+  margin-top: 16px;
+  max-width: 860px;
+  border: 1px solid #DFE1E5;
+  border-radius: 4px;
+
+  &-container {
+    padding: 32px;
+  }
+
+  &__card-select {
+    margin-top: 16px;
+    display: flex;
+    align-items: center;
+  }
+
+  &__card-item {
+    display: flex;
+    width: 320px;
+    height: 98px;
+    padding: 15px 16px 13px 16px;
+    border: 1px solid #DFE1E5;
+    border-radius: 4px;
+    transition: all 0.25s ease;
+  }
+
+  &__card-input{
+    display: none;
+  }
+
+  &__card-input:checked + label &__card-item {
+    border-color: #FFC542;
+  }
+
+  &__card-input:checked + label &__card-item-radio {
+    border: 3px solid #FA6400;
+  }
+
+  &__card-label:hover &__card-item  {
+    cursor: pointer;
+    border-color: #ffde91;
+  }
+
+  &__card-label {
+    margin-left: 16px;
+
+    &--first {
+      margin-left: 0px;
+    }
+  }
+
+  &__card-item-radio {
+    display: flex;
+    width: 18px;
+    height: 18px;
+    border: 1px solid #DFE1E5;
+    border-radius: 99px;
+    margin-top: 27px;
+  }
+
+  &__card-body {
+    margin-left: 16px;
+  }
+
+  &__card-name {
+    font-weight: bold;
+  }
+
+  &__output-header {
+    margin-top: 32px;
+  }
+
+
+}

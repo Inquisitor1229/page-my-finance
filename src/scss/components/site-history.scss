@@ -1,0 +1,50 @@
+.site-history {
+  margin-top: 40px;
+
+  &-container {
+    max-width: 1140px;
+    margin: 0 auto;
+  }
+  &__items {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  &__item {
+    text-decoration: underline;
+    padding-left: 8px;
+    max-width: 150px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    padding-right: 8px;
+
+    &:last-child {
+      text-decoration: none;
+      padding-right: 0px;
+    }
+
+    &:first-child {
+      padding-left: 0;
+    }
+
+    a:hover {
+      opacity: 0.75;
+    }
+
+    smaller {
+      color: #76777C;
+    }
+  }
+
+  &__item-detach {
+    background: url(/img/site-history/history-arrow.svg) no-repeat;
+    width: 5px;
+    height: 9px;
+    margin-left: 4px;
+  }
+}
+
+
+

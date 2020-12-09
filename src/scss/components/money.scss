@@ -1,0 +1,48 @@
+.money {
+  max-width: 860px;
+  background-color: #fafafb;
+  border: 1px solid #DFE1E5;
+  border-radius: 4px;
+  margin-top: 24px;
+
+  &-container {
+    display: flex;
+    padding: 23px 32px 33px 32px;
+  }
+  &__output, &__charge {
+    width: 50%;
+  }
+  &__charge {
+    color: #76777c;
+    border-left: 1px solid #DFE1E5;
+    padding-left: 33px;
+  }
+
+  &__charge-value, &__output-value {
+    font-size: 42px;
+    font-weight: 600;
+    line-height: 37px;
+  }
+
+  &__output-value-container, &__charge-value-container {
+    margin-top: 4px;
+  }
+
+  &__output-description, &__charge-description {
+    font-size: 42px;
+    line-height: 37px;
+  }
+
+  &__charge-title-container {
+    display: flex;
+    align-items: center;
+  }
+
+  &__charge-info {
+    width: 16px;
+    height: 16px;
+    background: url(/img/money/info.svg) ;
+    margin-left: 4px;
+    cursor: pointer;
+  }
+}

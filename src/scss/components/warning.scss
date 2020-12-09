@@ -1,0 +1,40 @@
+.warning {
+  max-width: 858px;
+  background: #FFFADE;
+  border: 1px solid #EAE5CC;
+  border-radius: 4px;
+  margin-top: 24px;
+
+  &-container {
+    padding: 11px 24px;
+  }
+
+  &__title {
+    font-weight: bold;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__list-item {
+    display: flex;
+    align-items: center;
+  }
+
+  &__list-item-icon {
+    width: 6px;
+    height: 6px;
+    border: 1px solid #FD7028;
+    border-radius: 999px;
+  }
+
+  &__list-item-text {
+    padding-left: 6px;
+  }
+
+  &__list-item-text > span {
+    font-weight: bold;
+  }
+}

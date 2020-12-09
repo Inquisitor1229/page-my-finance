@@ -1,0 +1,19 @@
+.annotation {
+  max-width: 860px;
+
+  &-container {
+    padding: 0 28px;
+  }
+
+  &__text {
+    a {
+      color: #fa6400;
+      border-bottom: 1px solid transparent;
+      transition: all 0.35s ease;
+    }
+
+    a:hover {
+      border-color: #fa6400;
+    }
+  }
+}

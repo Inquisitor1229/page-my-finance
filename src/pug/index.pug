@@ -1,0 +1,26 @@
+doctype html
+html(lang="ru")
+  head
+    title Мои финансы
+    meta(charset = 'utf-8')
+    meta(name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover")
+    meta(name="viewport" content="width-device-width, initial-scale=1.0")
+    meta(http-equiv="X-UA-Compatible" content="IE=edge")
+    link(rel="stylesheet" href="css/style.min.css")
+    link(href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;500;600;700;800;900&display=swap" rel="stylesheet")
+  body
+    include components/header.pug
+    include components/hint.pug
+    include components/site-history.pug
+    .workspace
+      .container
+        .workspace-menu
+          include components/left-menu.pug
+        .workspace-page
+          include components/annotation.pug
+          include components/money.pug
+          include components/warning.pug
+          include components/payment-method.pug
+          include components/operations.pug
+    include components/footer.pug
+    script(src="js/script.min.js")
